@@ -1,0 +1,171 @@
+<html>
+    <head>
+  <title>My Photography Portfolio</title>
+      <style>
+        *{
+          margin: 0;
+          padding: 0;
+          
+        }
+    html,body {
+  color:#333;
+  height: 100%;
+}
+
+.portfolio{
+    display:flex;
+    width: 300px;
+    border-radius: 8px;
+    background:white;
+    gap:1px;
+    height:auto;
+
+    object-fit: cover;
+    
+}
+
+section {
+  padding: 40px;
+  max-width: 900px;
+}
+
+.grid {
+  display:flex;
+  flex-wrap: nowrap;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 17px;
+  margin: 0;
+}
+
+.grid img {
+  width: 120%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(20px); 
+   animation: fadeInSlideUp 0.8s ease-out forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header {
+   font-size:25;
+   font-family:'Times New Roman', Times, serif;
+   background:rgb(44, 44, 81);
+   color:darksalmon;
+   padding:20px;
+   text-align: center;
+      }
+button{
+  color:black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+   font-weight: bold;
+  font-size: 20px;
+       }
+ nav a {
+  color:black;
+  text-decoration: none; 
+  font-weight: bold;
+  justify-content: space-between;     
+   }       
+   
+   @keyframes fadeInSlideUp {
+      from {
+            opacity: 0;
+            transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+                }
+            }
+
+.grid img:hover {
+  transform: scale(1.09);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+     }
+  .grid img:nth-child(1) { animation-delay: 0.1s; }
+  .grid img:nth-child(2) { animation-delay: 0.2s; }
+  .grid img:nth-child(3) { animation-delay: 0.3s; }
+  .grid img:nth-child(4) { animation-delay: 0.4s; }
+  .grid img:nth-child(5) { animation-delay: 0.5s; }
+  .grid img:nth-child(6) { animation-delay: 0.6s; }
+  .grid img:nth-child(7) { animation-delay: 0.7s; }
+  .grid img:nth-child(8) { animation-delay: 0.8s; }
+  .grid img:nth-child(9) { animation-delay: 0.9s; }
+  .grid img:nth-child(10) { animation-delay: 1.0s; }
+  .grid img:nth-child(11) { animation-delay: 1.1s; }
+  .grid img:nth-child(12) { animation-delay: 1.2s; }
+  footer {
+        width: 100%;
+        background:lightgray;
+        color:black;/* Matching header text color */
+        text-align: center;
+        padding: 20px;
+       font-family: Arial, sans-serif;
+       font-size: 15px;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.2); 
+      flex-shrink: 0; /* Prevents footer from shrinking */
+      margin-top: auto; 
+        }
+
+ footer p {
+          margin: 5px 0;
+            }
+    button:hover{
+          background-color:yellow;
+            }
+          
+ </style>
+
+</head>
+<body>
+  <header>
+        <nav>
+          <button><a href="C:\Users\LENOVO\Desktop\Teja\Folder\home.html">Home</a></button>
+        <button><a href="C:\Users\LENOVO\Desktop\Teja\Folder\portfolio.html">Portfolio</a></button>
+      <button><a href="C:\Users\LENOVO\Desktop\Teja\Folder\service.html">Services</a></button>
+      <button><a href="C:\Users\LENOVO\Desktop\Teja\Folder\1.html">contact</a></button>
+      <button><a href="C:\Users\LENOVO\Desktop\Teja\Folder\Aboutus.html">About Me</a></button>
+      
+    </nav>
+  </header>
+
+
+  <section class="portfolio">
+    <div class="grid">
+      <img src="https://shivambhutani.in/wp-content/uploads/2023/02/Pro-Capture-One-0064.jpg" alt="Photo 1" />
+      <img src="https://i.pinimg.com/474x/38/6e/b0/386eb08698d75f248022e0951a996dba.jpg" alt="Photo 3" />
+      <img src="https://ecommercephotographyindia.com/assets/img/gallery/stones-top-set.jpg" alt="Photo 2" />
+      <img src="https://blouse-design.com/wp-content/uploads/2025/03/s3-693x1024.webp" alt="Photo 4"/>
+</div>
+  </section>
+<section class="portfolio">
+    <div class="grid">
+      <img src="https://crystallinestudio.com/image_gallery/thumbs/Crystalline-photography-3710.jpg" alt="Photo 2" />     
+      <img src="https://i.pinimg.com/564x/36/27/b7/3627b7ae42b56d00eaa1062a2c91da57.jpg" alt="Photo 3" />
+      <img src="https://content.jdmagicbox.com/comp/kanpur/y8/0512px512.x512.150209004501.y8y8/catalogue/swati-wedding-photography-lal-bangla-kanpur-candid-wedding-photographers-emhfieudx6.jpg" alt="Photo 2" />
+      <img src="https://d397bfy4gvgcdm.cloudfront.net/187524-4T4A5801.jpeg" alt="Photo 4"/>
+</div>
+  </section>
+  <section class="portfolio">
+    <div class="grid">
+      <img src="https://static.wixstatic.com/media/b63811_f0f99748b5e642b2a5fce1aca4fd22bf~mv2.jpg/v1/fill/w_564,h_845,al_c,q_85,enc_avif,quality_auto/b63811_f0f99748b5e642b2a5fce1aca4fd22bf~mv2.jpg" alt="Photo 1" />
+      <img src="https://static.wixstatic.com/media/36c8e4_7621c38e14654475ac8ad02027c3fa2a~mv2.jpg/v1/fill/w_980,h_1470,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/36c8e4_7621c38e14654475ac8ad02027c3fa2a~mv2.jpg" alt="Photo 4"/>
+      <img src="https://pvthenextlevelphotography.com/wp-content/uploads/2024/10/5-Year-Old-Kids-Photoshoot-9.jpg" alt="Photo 3" />
+      <img src="https://market-resized.envatousercontent.com/photodune.net/EVA/TRX/74/e1/43/7d/df/v1_E11/E113BXWL.jpeg?auto=format&q=94&mark=https%3A%2F%2Fassets.market-storefront.envato-static.com%2Fwatermarks%2Fphoto-260724.png&opacity=0.2&cf_fit=contain&w=590&h=884&s=480637185d097269d87eee5c5bb25a87db29a16d49f4719849d8a06cfc26e2df" alt="Photo 1" />
+
+      
+</div>
+  </section>
+  <footer>
+            <p>&copy; 2025 Tejas Photography.</p>
+                 <p>All rights reserved.</p>
+        </footer>
+  </body>
+</html>
